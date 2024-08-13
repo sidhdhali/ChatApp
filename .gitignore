@@ -1,2 +1,5 @@
 .env
-.env_local
+.env.local
+*.local
+*.env
+*.env.local
