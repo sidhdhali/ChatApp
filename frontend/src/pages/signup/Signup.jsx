@@ -1,5 +1,5 @@
 // import React from 'react'
-import GenderDCheckbox from './GenderDCheckbox'
+import GenderDCheckbox from './GenderDCheckbox.jsx'
 
 const Signup = () =>
 {
