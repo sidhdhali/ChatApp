@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useAuthContext } from "../context/AuthContext";
 const useSignup = () =>
 {
-  const { setAuthUswer } = useAuthContext();
+  const { setAuthUser } = useAuthContext();
 
   const [loading, setLoading] = useState(false);
   const signup = async ({ fullName, username, password, confirmPassword, gender }) =>
@@ -31,7 +31,7 @@ const useSignup = () =>
       localStorage.setItem("chat-user", JSON.stringify(data));
 
       // context
-      setAuthUswer(data);
+      setAuthUser(data);
       console.log(data);
 
     } catch (error)
